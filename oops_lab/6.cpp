@@ -19,7 +19,7 @@ class D2{
     }
     friend int add(D1 obj1,D2 obj2);
 };
-add(D1 obj1,D2 obj2){
+int add(D1 obj1,D2 obj2){
     int inches=obj1.meters*39.37+obj1.centemeters*0.3937;
     int total_inches=inches+obj2.feet*12+obj2.inches;
     int total_feet=total_inches/12;
